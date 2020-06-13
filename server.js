@@ -1,7 +1,11 @@
 const express = require("express");
 const connectDB = require("./config/db");
+const cors = require("cors");
 
 const app = express();
+
+// Enable CORS
+app.use(cors());
 
 // Body Parser
 app.use(express.json());
